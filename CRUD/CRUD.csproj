@@ -1,0 +1,462 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{96FD089B-D983-4CA6-B300-252A5CD923B3}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CRUD</RootNamespace>
+    <AssemblyName>CRUD</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44391</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icon\feather\css\feather.css" />
+    <Content Include="icon\feather\fonts\feather.hxd" />
+    <Content Include="icon\feather\fonts\feather.svg" />
+    <Content Include="icon\flag-icons\css\flag-icon.css" />
+    <Content Include="icon\flag-icons\fonts\ad.svg" />
+    <Content Include="icon\flag-icons\fonts\ae.svg" />
+    <Content Include="icon\flag-icons\fonts\af.svg" />
+    <Content Include="icon\flag-icons\fonts\ag.svg" />
+    <Content Include="icon\flag-icons\fonts\ai.svg" />
+    <Content Include="icon\flag-icons\fonts\al.svg" />
+    <Content Include="icon\flag-icons\fonts\am.svg" />
+    <Content Include="icon\flag-icons\fonts\ao.svg" />
+    <Content Include="icon\flag-icons\fonts\aq.svg" />
+    <Content Include="icon\flag-icons\fonts\ar.svg" />
+    <Content Include="icon\flag-icons\fonts\as.svg" />
+    <Content Include="icon\flag-icons\fonts\at.svg" />
+    <Content Include="icon\flag-icons\fonts\au.svg" />
+    <Content Include="icon\flag-icons\fonts\aw.svg" />
+    <Content Include="icon\flag-icons\fonts\ax.svg" />
+    <Content Include="icon\flag-icons\fonts\az.svg" />
+    <Content Include="icon\flag-icons\fonts\ba.svg" />
+    <Content Include="icon\flag-icons\fonts\bb.svg" />
+    <Content Include="icon\flag-icons\fonts\bd.svg" />
+    <Content Include="icon\flag-icons\fonts\be.svg" />
+    <Content Include="icon\flag-icons\fonts\bf.svg" />
+    <Content Include="icon\flag-icons\fonts\bg.svg" />
+    <Content Include="icon\flag-icons\fonts\bh.svg" />
+    <Content Include="icon\flag-icons\fonts\bi.svg" />
+    <Content Include="icon\flag-icons\fonts\bj.svg" />
+    <Content Include="icon\flag-icons\fonts\bl.svg" />
+    <Content Include="icon\flag-icons\fonts\bm.svg" />
+    <Content Include="icon\flag-icons\fonts\bn.svg" />
+    <Content Include="icon\flag-icons\fonts\bo.svg" />
+    <Content Include="icon\flag-icons\fonts\bq.svg" />
+    <Content Include="icon\flag-icons\fonts\br.svg" />
+    <Content Include="icon\flag-icons\fonts\bs.svg" />
+    <Content Include="icon\flag-icons\fonts\bt.svg" />
+    <Content Include="icon\flag-icons\fonts\bv.svg" />
+    <Content Include="icon\flag-icons\fonts\bw.svg" />
+    <Content Include="icon\flag-icons\fonts\by.svg" />
+    <Content Include="icon\flag-icons\fonts\bz.svg" />
+    <Content Include="icon\flag-icons\fonts\ca.svg" />
+    <Content Include="icon\flag-icons\fonts\cc.svg" />
+    <Content Include="icon\flag-icons\fonts\cd.svg" />
+    <Content Include="icon\flag-icons\fonts\cf.svg" />
+    <Content Include="icon\flag-icons\fonts\cg.svg" />
+    <Content Include="icon\flag-icons\fonts\ch.svg" />
+    <Content Include="icon\flag-icons\fonts\ci.svg" />
+    <Content Include="icon\flag-icons\fonts\ck.svg" />
+    <Content Include="icon\flag-icons\fonts\cl.svg" />
+    <Content Include="icon\flag-icons\fonts\cm.svg" />
+    <Content Include="icon\flag-icons\fonts\cn.svg" />
+    <Content Include="icon\flag-icons\fonts\co.svg" />
+    <Content Include="icon\flag-icons\fonts\cr.svg" />
+    <Content Include="icon\flag-icons\fonts\cu.svg" />
+    <Content Include="icon\flag-icons\fonts\cv.svg" />
+    <Content Include="icon\flag-icons\fonts\cw.svg" />
+    <Content Include="icon\flag-icons\fonts\cx.svg" />
+    <Content Include="icon\flag-icons\fonts\cy.svg" />
+    <Content Include="icon\flag-icons\fonts\cz.svg" />
+    <Content Include="icon\flag-icons\fonts\de.svg" />
+    <Content Include="icon\flag-icons\fonts\dj.svg" />
+    <Content Include="icon\flag-icons\fonts\dk.svg" />
+    <Content Include="icon\flag-icons\fonts\dm.svg" />
+    <Content Include="icon\flag-icons\fonts\do.svg" />
+    <Content Include="icon\flag-icons\fonts\dz.svg" />
+    <Content Include="icon\flag-icons\fonts\ec.svg" />
+    <Content Include="icon\flag-icons\fonts\ee.svg" />
+    <Content Include="icon\flag-icons\fonts\eg.svg" />
+    <Content Include="icon\flag-icons\fonts\eh.svg" />
+    <Content Include="icon\flag-icons\fonts\er.svg" />
+    <Content Include="icon\flag-icons\fonts\es.svg" />
+    <Content Include="icon\flag-icons\fonts\et.svg" />
+    <Content Include="icon\flag-icons\fonts\eu.svg" />
+    <Content Include="icon\flag-icons\fonts\fi.svg" />
+    <Content Include="icon\flag-icons\fonts\fj.svg" />
+    <Content Include="icon\flag-icons\fonts\fk.svg" />
+    <Content Include="icon\flag-icons\fonts\fm.svg" />
+    <Content Include="icon\flag-icons\fonts\fo.svg" />
+    <Content Include="icon\flag-icons\fonts\fr.svg" />
+    <Content Include="icon\flag-icons\fonts\ga.svg" />
+    <Content Include="icon\flag-icons\fonts\gb.svg" />
+    <Content Include="icon\flag-icons\fonts\gd.svg" />
+    <Content Include="icon\flag-icons\fonts\ge.svg" />
+    <Content Include="icon\flag-icons\fonts\gf.svg" />
+    <Content Include="icon\flag-icons\fonts\gg.svg" />
+    <Content Include="icon\flag-icons\fonts\gh.svg" />
+    <Content Include="icon\flag-icons\fonts\gi.svg" />
+    <Content Include="icon\flag-icons\fonts\gl.svg" />
+    <Content Include="icon\flag-icons\fonts\gm.svg" />
+    <Content Include="icon\flag-icons\fonts\gn.svg" />
+    <Content Include="icon\flag-icons\fonts\gp.svg" />
+    <Content Include="icon\flag-icons\fonts\gq.svg" />
+    <Content Include="icon\flag-icons\fonts\gr.svg" />
+    <Content Include="icon\flag-icons\fonts\gs.svg" />
+    <Content Include="icon\flag-icons\fonts\gt.svg" />
+    <Content Include="icon\flag-icons\fonts\gu.svg" />
+    <Content Include="icon\flag-icons\fonts\gw.svg" />
+    <Content Include="icon\flag-icons\fonts\gy.svg" />
+    <Content Include="icon\flag-icons\fonts\hk.svg" />
+    <Content Include="icon\flag-icons\fonts\hm.svg" />
+    <Content Include="icon\flag-icons\fonts\hn.svg" />
+    <Content Include="icon\flag-icons\fonts\hr.svg" />
+    <Content Include="icon\flag-icons\fonts\ht.svg" />
+    <Content Include="icon\flag-icons\fonts\hu.svg" />
+    <Content Include="icon\flag-icons\fonts\id.svg" />
+    <Content Include="icon\flag-icons\fonts\ie.svg" />
+    <Content Include="icon\flag-icons\fonts\il.svg" />
+    <Content Include="icon\flag-icons\fonts\im.svg" />
+    <Content Include="icon\flag-icons\fonts\in.svg" />
+    <Content Include="icon\flag-icons\fonts\io.svg" />
+    <Content Include="icon\flag-icons\fonts\iq.svg" />
+    <Content Include="icon\flag-icons\fonts\ir.svg" />
+    <Content Include="icon\flag-icons\fonts\is.svg" />
+    <Content Include="icon\flag-icons\fonts\it.svg" />
+    <Content Include="icon\flag-icons\fonts\je.svg" />
+    <Content Include="icon\flag-icons\fonts\jm.svg" />
+    <Content Include="icon\flag-icons\fonts\jo.svg" />
+    <Content Include="icon\flag-icons\fonts\jp.svg" />
+    <Content Include="icon\flag-icons\fonts\ke.svg" />
+    <Content Include="icon\flag-icons\fonts\kg.svg" />
+    <Content Include="icon\flag-icons\fonts\kh.svg" />
+    <Content Include="icon\flag-icons\fonts\ki.svg" />
+    <Content Include="icon\flag-icons\fonts\km.svg" />
+    <Content Include="icon\flag-icons\fonts\kn.svg" />
+    <Content Include="icon\flag-icons\fonts\kp.svg" />
+    <Content Include="icon\flag-icons\fonts\kr.svg" />
+    <Content Include="icon\flag-icons\fonts\kw.svg" />
+    <Content Include="icon\flag-icons\fonts\ky.svg" />
+    <Content Include="icon\flag-icons\fonts\kz.svg" />
+    <Content Include="icon\flag-icons\fonts\la.svg" />
+    <Content Include="icon\flag-icons\fonts\lb.svg" />
+    <Content Include="icon\flag-icons\fonts\lc.svg" />
+    <Content Include="icon\flag-icons\fonts\li.svg" />
+    <Content Include="icon\flag-icons\fonts\lk.svg" />
+    <Content Include="icon\flag-icons\fonts\lr.svg" />
+    <Content Include="icon\flag-icons\fonts\ls.svg" />
+    <Content Include="icon\flag-icons\fonts\lt.svg" />
+    <Content Include="icon\flag-icons\fonts\lu.svg" />
+    <Content Include="icon\flag-icons\fonts\lv.svg" />
+    <Content Include="icon\flag-icons\fonts\ly.svg" />
+    <Content Include="icon\flag-icons\fonts\ma.svg" />
+    <Content Include="icon\flag-icons\fonts\mc.svg" />
+    <Content Include="icon\flag-icons\fonts\md.svg" />
+    <Content Include="icon\flag-icons\fonts\me.svg" />
+    <Content Include="icon\flag-icons\fonts\mf.svg" />
+    <Content Include="icon\flag-icons\fonts\mg.svg" />
+    <Content Include="icon\flag-icons\fonts\mh.svg" />
+    <Content Include="icon\flag-icons\fonts\mk.svg" />
+    <Content Include="icon\flag-icons\fonts\ml.svg" />
+    <Content Include="icon\flag-icons\fonts\mm.svg" />
+    <Content Include="icon\flag-icons\fonts\mn.svg" />
+    <Content Include="icon\flag-icons\fonts\mo.svg" />
+    <Content Include="icon\flag-icons\fonts\mp.svg" />
+    <Content Include="icon\flag-icons\fonts\mq.svg" />
+    <Content Include="icon\flag-icons\fonts\mr.svg" />
+    <Content Include="icon\flag-icons\fonts\ms.svg" />
+    <Content Include="icon\flag-icons\fonts\mt.svg" />
+    <Content Include="icon\flag-icons\fonts\mu.svg" />
+    <Content Include="icon\flag-icons\fonts\mv.svg" />
+    <Content Include="icon\flag-icons\fonts\mw.svg" />
+    <Content Include="icon\flag-icons\fonts\mx.svg" />
+    <Content Include="icon\flag-icons\fonts\my.svg" />
+    <Content Include="icon\flag-icons\fonts\mz.svg" />
+    <Content Include="icon\flag-icons\fonts\na.svg" />
+    <Content Include="icon\flag-icons\fonts\nc.svg" />
+    <Content Include="icon\flag-icons\fonts\ne.svg" />
+    <Content Include="icon\flag-icons\fonts\nf.svg" />
+    <Content Include="icon\flag-icons\fonts\ng.svg" />
+    <Content Include="icon\flag-icons\fonts\ni.svg" />
+    <Content Include="icon\flag-icons\fonts\nl.svg" />
+    <Content Include="icon\flag-icons\fonts\no.svg" />
+    <Content Include="icon\flag-icons\fonts\np.svg" />
+    <Content Include="icon\flag-icons\fonts\nr.svg" />
+    <Content Include="icon\flag-icons\fonts\nu.svg" />
+    <Content Include="icon\flag-icons\fonts\nz.svg" />
+    <Content Include="icon\flag-icons\fonts\om.svg" />
+    <Content Include="icon\flag-icons\fonts\pa.svg" />
+    <Content Include="icon\flag-icons\fonts\pe.svg" />
+    <Content Include="icon\flag-icons\fonts\pf.svg" />
+    <Content Include="icon\flag-icons\fonts\pg.svg" />
+    <Content Include="icon\flag-icons\fonts\ph.svg" />
+    <Content Include="icon\flag-icons\fonts\pk.svg" />
+    <Content Include="icon\flag-icons\fonts\pl.svg" />
+    <Content Include="icon\flag-icons\fonts\pm.svg" />
+    <Content Include="icon\flag-icons\fonts\pn.svg" />
+    <Content Include="icon\flag-icons\fonts\pr.svg" />
+    <Content Include="icon\flag-icons\fonts\ps.svg" />
+    <Content Include="icon\flag-icons\fonts\pt.svg" />
+    <Content Include="icon\flag-icons\fonts\pw.svg" />
+    <Content Include="icon\flag-icons\fonts\py.svg" />
+    <Content Include="icon\flag-icons\fonts\qa.svg" />
+    <Content Include="icon\flag-icons\fonts\ro.svg" />
+    <Content Include="icon\flag-icons\fonts\rs.svg" />
+    <Content Include="icon\flag-icons\fonts\ru.svg" />
+    <Content Include="icon\flag-icons\fonts\rw.svg" />
+    <Content Include="icon\flag-icons\fonts\sa.svg" />
+    <Content Include="icon\flag-icons\fonts\sb.svg" />
+    <Content Include="icon\flag-icons\fonts\sc.svg" />
+    <Content Include="icon\flag-icons\fonts\sd.svg" />
+    <Content Include="icon\flag-icons\fonts\se.svg" />
+    <Content Include="icon\flag-icons\fonts\sg.svg" />
+    <Content Include="icon\flag-icons\fonts\sh.svg" />
+    <Content Include="icon\flag-icons\fonts\si.svg" />
+    <Content Include="icon\flag-icons\fonts\sj.svg" />
+    <Content Include="icon\flag-icons\fonts\sk.svg" />
+    <Content Include="icon\flag-icons\fonts\sl.svg" />
+    <Content Include="icon\flag-icons\fonts\sm.svg" />
+    <Content Include="icon\flag-icons\fonts\sn.svg" />
+    <Content Include="icon\flag-icons\fonts\so.svg" />
+    <Content Include="icon\flag-icons\fonts\sr.svg" />
+    <Content Include="icon\flag-icons\fonts\ss.svg" />
+    <Content Include="icon\flag-icons\fonts\st.svg" />
+    <Content Include="icon\flag-icons\fonts\sv.svg" />
+    <Content Include="icon\flag-icons\fonts\sx.svg" />
+    <Content Include="icon\flag-icons\fonts\sy.svg" />
+    <Content Include="icon\flag-icons\fonts\sz.svg" />
+    <Content Include="icon\flag-icons\fonts\tc.svg" />
+    <Content Include="icon\flag-icons\fonts\td.svg" />
+    <Content Include="icon\flag-icons\fonts\tf.svg" />
+    <Content Include="icon\flag-icons\fonts\tg.svg" />
+    <Content Include="icon\flag-icons\fonts\th.svg" />
+    <Content Include="icon\flag-icons\fonts\tj.svg" />
+    <Content Include="icon\flag-icons\fonts\tk.svg" />
+    <Content Include="icon\flag-icons\fonts\tl.svg" />
+    <Content Include="icon\flag-icons\fonts\tm.svg" />
+    <Content Include="icon\flag-icons\fonts\tn.svg" />
+    <Content Include="icon\flag-icons\fonts\to.svg" />
+    <Content Include="icon\flag-icons\fonts\tr.svg" />
+    <Content Include="icon\flag-icons\fonts\tt.svg" />
+    <Content Include="icon\flag-icons\fonts\tv.svg" />
+    <Content Include="icon\flag-icons\fonts\tw.svg" />
+    <Content Include="icon\flag-icons\fonts\tz.svg" />
+    <Content Include="icon\flag-icons\fonts\ua.svg" />
+    <Content Include="icon\flag-icons\fonts\ug.svg" />
+    <Content Include="icon\flag-icons\fonts\um.svg" />
+    <Content Include="icon\flag-icons\fonts\un.svg" />
+    <Content Include="icon\flag-icons\fonts\us.svg" />
+    <Content Include="icon\flag-icons\fonts\uy.svg" />
+    <Content Include="icon\flag-icons\fonts\uz.svg" />
+    <Content Include="icon\flag-icons\fonts\va.svg" />
+    <Content Include="icon\flag-icons\fonts\vc.svg" />
+    <Content Include="icon\flag-icons\fonts\ve.svg" />
+    <Content Include="icon\flag-icons\fonts\vg.svg" />
+    <Content Include="icon\flag-icons\fonts\vi.svg" />
+    <Content Include="icon\flag-icons\fonts\vn.svg" />
+    <Content Include="icon\flag-icons\fonts\vu.svg" />
+    <Content Include="icon\flag-icons\fonts\wf.svg" />
+    <Content Include="icon\flag-icons\fonts\ws.svg" />
+    <Content Include="icon\flag-icons\fonts\ye.svg" />
+    <Content Include="icon\flag-icons\fonts\yt.svg" />
+    <Content Include="icon\flag-icons\fonts\za.svg" />
+    <Content Include="icon\flag-icons\fonts\zm.svg" />
+    <Content Include="icon\flag-icons\fonts\zw.svg" />
+    <Content Include="icon\font-awesome\css\font-awesome.min.css" />
+    <Content Include="icon\font-awesome\fonts\fontawesome-webfont-1.hxd" />
+    <Content Include="icon\font-awesome\fonts\fontawesome-webfont.hxd" />
+    <Content Include="icon\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="icon\icofont\css\icofont.css" />
+    <Content Include="icon\icofont\fonts\icofont.hxd" />
+    <Content Include="icon\icofont\fonts\icofont.svg" />
+    <Content Include="icon\ion-icon\css\ionicons.min.css" />
+    <Content Include="icon\ion-icon\fonts\ionicons.hxd" />
+    <Content Include="icon\ion-icon\fonts\ionicons.svg" />
+    <Content Include="icon\material-design\css\material-design-iconic-font.min.css" />
+    <Content Include="icon\simple-line-icons\css\simple-line-icons.css" />
+    <Content Include="icon\simple-line-icons\fonts\Simple-Line-Icons.hxd" />
+    <Content Include="icon\simple-line-icons\fonts\Simple-Line-Icons.svg" />
+    <Content Include="icon\SVG-animated\svg-weather.css" />
+    <Content Include="icon\themify-icons\fonts\themify-1.hxd" />
+    <Content Include="icon\themify-icons\fonts\themify.hxd" />
+    <Content Include="icon\themify-icons\fonts\themify.svg" />
+    <Content Include="icon\themify-icons\themify-icons.css" />
+    <Content Include="icon\typicons-icons\css\typicons.min.css" />
+    <Content Include="icon\typicons-icons\fonts\typicons-1.hxd" />
+    <Content Include="icon\typicons-icons\fonts\typicons.hxd" />
+    <Content Include="icon\typicons-icons\fonts\typicons.svg" />
+    <Content Include="icon\weather-icons\css\weather-icons-wind.min.css" />
+    <Content Include="icon\weather-icons\css\weather-icons.min.css" />
+    <Content Include="icon\weather-icons\fonts\weathericons-regular-webfont-1.hxd" />
+    <Content Include="icon\weather-icons\fonts\weathericons-regular-webfont.hxd" />
+    <Content Include="icon\weather-icons\fonts\weathericons-regular-webfont.svg" />
+    <Content Include="icon\weather-icons\weather-custom.js" />
+    <Content Include="Index.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controller\DALEndereco.cs" />
+    <Compile Include="Controller\DALFuncionario.cs" />
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Endereco.cs" />
+    <Compile Include="Model\Funcionario.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icon\feather\css\vssver.scc" />
+    <Content Include="icon\feather\fonts\feather.ttf" />
+    <Content Include="icon\feather\fonts\feather.woff" />
+    <Content Include="icon\feather\fonts\vssver.scc" />
+    <Content Include="icon\flag-icons\css\vssver.scc" />
+    <Content Include="icon\flag-icons\fonts\vssver.scc" />
+    <Content Include="icon\font-awesome\css\vssver.scc" />
+    <Content Include="icon\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="icon\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="icon\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="icon\font-awesome\fonts\vssver.scc" />
+    <Content Include="icon\icofont\css\vssver.scc" />
+    <Content Include="icon\icofont\fonts\icofont.ttf" />
+    <Content Include="icon\icofont\fonts\icofont.woff" />
+    <Content Include="icon\icofont\fonts\vssver.scc" />
+    <Content Include="icon\ion-icon\css\vssver.scc" />
+    <Content Include="icon\ion-icon\fonts\ionicons.ttf" />
+    <Content Include="icon\ion-icon\fonts\ionicons.woff" />
+    <Content Include="icon\ion-icon\fonts\vssver.scc" />
+    <Content Include="icon\material-design\css\vssver.scc" />
+    <Content Include="icon\material-design\fonts\Material-Design-Iconic-Font.ttf" />
+    <Content Include="icon\material-design\fonts\Material-Design-Iconic-Font.woff" />
+    <Content Include="icon\material-design\fonts\Material-Design-Iconic-Font.woff2" />
+    <Content Include="icon\material-design\fonts\vssver.scc" />
+    <Content Include="icon\simple-line-icons\css\vssver.scc" />
+    <Content Include="icon\simple-line-icons\fonts\Simple-Line-Icons.ttf" />
+    <Content Include="icon\simple-line-icons\fonts\Simple-Line-Icons.woff" />
+    <Content Include="icon\simple-line-icons\fonts\Simple-Line-Icons.woff2" />
+    <Content Include="icon\simple-line-icons\fonts\vssver.scc" />
+    <Content Include="icon\SVG-animated\vssver.scc" />
+    <Content Include="icon\themify-icons\fonts\themify.ttf" />
+    <Content Include="icon\themify-icons\fonts\themify.woff" />
+    <Content Include="icon\themify-icons\fonts\vssver.scc" />
+    <Content Include="icon\themify-icons\vssver.scc" />
+    <Content Include="icon\typicons-icons\css\vssver.scc" />
+    <Content Include="icon\typicons-icons\fonts\typicons.ttf" />
+    <Content Include="icon\typicons-icons\fonts\typicons.woff" />
+    <Content Include="icon\typicons-icons\fonts\vssver.scc" />
+    <Content Include="icon\weather-icons\css\vssver.scc" />
+    <Content Include="icon\weather-icons\fonts\vssver.scc" />
+    <Content Include="icon\weather-icons\fonts\weathericons-regular-webfont.ttf" />
+    <Content Include="icon\weather-icons\fonts\weathericons-regular-webfont.woff" />
+    <Content Include="icon\weather-icons\fonts\weathericons-regular-webfont.woff2" />
+    <Content Include="icon\weather-icons\vssver.scc" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50024</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44391/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
